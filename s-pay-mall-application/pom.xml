@@ -16,5 +16,216 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Spring Boot Web 启动器                                        -->
+        <!-- 内嵌 Tomcat + Spring MVC + Jackson，提供 RESTful 接口能力     -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Spring Boot 测试启动器（JUnit 5 + Mockito + AssertJ）         -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- 内嵌 Tomcat 核心（已包含在 spring-boot-starter-web 中）       -->
+        <!-- 显式声明是为了在需要时单独替换为 Undertow/Jetty               -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Spring Boot 配置注解处理器                                    -->
+        <!-- 编译时生成 @ConfigurationProperties 的元数据，让 IDEA 有提示  -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- MyBatis + Spring Boot 自动配置                                -->
+        <!-- 版本由父 POM dependencyManagement 统一管理                    -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- MySQL JDBC 驱动                                               -->
+        <!-- 版本由父 POM dependencyManagement 统一管理                    -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Fastjson2：高性能 JSON 序列化/反序列化                        -->
+        <!-- 版本由父 POM dependencyManagement 统一管理                    -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Apache Commons Lang3：字符串、数组、日期等工具方法            -->
+        <!-- 版本由父 POM dependencyManagement 统一管理                    -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Lombok：编译期自动生成 Getter/Setter/Builder/日志等样板代码   -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Google Guava：不可变集合、本地缓存、Preconditions 等工具      -->
+        <!-- 版本由父 POM dependencyManagement 统一管理                    -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- JJWT API：JSON Web Token 生成与验证（0.12.x 模块化版本）           -->
+        <!-- jjwt-impl 和 jjwt-jackson 由父 POM 以 runtime scope 引入      -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Auth0 Java-JWT：JWT 的另一种实现（主要用于第三方 Token 验证） -->
+        <!-- 版本由父 POM dependencyManagement 统一管理                    -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Apache Commons Codec：Base64、Hex、MD5、SHA 等编解码          -->
+        <!-- 版本由父 POM dependencyManagement 统一管理                    -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Retrofit2 + Gson：声明式 HTTP 客户端                          -->
+        <!-- 用于调用外部 REST API，响应自动反序列化为 Java 对象           -->
+        <!-- TODO: Gson 与 Fastjson2 功能重叠，后续建议统一 JSON 库        -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-gson</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- 工程模块（DDD 分层）                                          -->
+        <!-- trigger=触发器层（Controller/Listener）                       -->
+        <!-- infrastructure=基础设施层（数据访问/外部服务调用）             -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <dependency>
+            <groupId>com.codespace</groupId>
+            <artifactId>s-pay-mall-trigger</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.codespace</groupId>
+            <artifactId>s-pay-mall-infrastructure</artifactId>
+        </dependency>
+    </dependencies>
+
+    <!--   开启资源过滤-->
+    <build>
+        <!-- 最总jar包名称-->
+        <finalName>shopping-mall</finalName>
+        <!-- 资源过滤，编译时将 @xxx@ 占位符替换为 Maven 属性值-->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/**</include>
+                </includes>
+            </resource>
+        </resources>
+        <!-- testResource 和上面类似 作用于测试资源目录src/test/resource,启用过滤并包含所有文件。-->
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/**</include>
+                </includes>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <!-- 启用 @ 分隔符，避免与 Spring 的 ${} 冲突 -->
+                <!-- 这样才能正确替换 application.yaml 中的 @profileActive@ -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimiter>@</delimiter>
+                    </delimiters>
+                </configuration>
+            </plugin>
+            <!--单元测试插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <!-- 版本由 spring-boot-start-parent管理，无需手动指定-->
+                <configuration>
+                    <!-- 跳过所有测试的执行，编译测试代码但是不运行-->
+                    <skipTests>true</skipTests>
+                    <!--测试构建失败不会忽略失败（但是被skipTest覆盖，因为测试根本没执行）-->
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <includes>
+                        <!--指定测试类名模式，只运行符合 *Test.java 的类（但由于跳过了，实际不生效）-->
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <!-- Spring Boot 打包插件：打成可执行 fat jar -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 指定启动类（包含 main 方法的类），作为 JAR 的 Main-Class 入口 -->
+                    <mainClass>com.codespace.Application</mainClass>
+                    <!-- 打包布局为 JAR（标准可执行 JAR 结构），也可选 WAR 或 ZIP 等 -->
+                    <layout>JAR</layout>
+                    <!-- 继承父 POM 的 JVM 调优参数，mvn spring-boot:run 时生效 -->
+                    <jvmArguments>${java_jvm}</jvmArguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

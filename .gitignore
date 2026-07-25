@@ -37,3 +37,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Sensitive local config ###
+**/application-local.yaml
+**/application-local.yml
