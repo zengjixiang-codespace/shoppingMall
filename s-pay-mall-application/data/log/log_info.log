@@ -1,0 +1,27 @@
+26-07-25.21:17:01.448 [main            ] INFO  ApiTest                - Starting ApiTest using Java 21.0.9 with PID 34436 (started by zengjixiang in C:\Myworkplace\JavaWeb\Design-pattern\projectCoding\shoppingMall\s-pay-mall-application)
+26-07-25.21:17:01.449 [main            ] INFO  ApiTest                - The following 2 profiles are active: "dev", "local"
+26-07-25.21:17:02.041 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.codespace]' package. Please check your configuration.
+26-07-25.21:17:03.070 [main            ] INFO  ApiTest                - Started ApiTest in 2.105 seconds (process running for 3.152)
+26-07-25.21:17:04.664 [main            ] INFO  ApiTest                - 测试完成
+26-07-25.21:20:22.237 [main            ] INFO  ApiTest                - Starting ApiTest using Java 17.0.12 with PID 34416 (started by zengjixiang in C:\Myworkplace\JavaWeb\Design-pattern\projectCoding\shoppingMall\s-pay-mall-application)
+26-07-25.21:20:22.239 [main            ] INFO  ApiTest                - The following 2 profiles are active: "dev", "local"
+26-07-25.21:20:22.824 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.codespace]' package. Please check your configuration.
+26-07-25.21:20:23.613 [main            ] INFO  ApiTest                - Started ApiTest in 1.918 seconds (process running for 2.841)
+26-07-25.21:20:25.319 [main            ] INFO  ApiTest                - 测试完成
+26-07-25.21:22:20.438 [main            ] INFO  ApiTest                - Starting ApiTest using Java 17.0.12 with PID 35472 (started by zengjixiang in C:\Myworkplace\JavaWeb\Design-pattern\projectCoding\shoppingMall\s-pay-mall-application)
+26-07-25.21:22:20.439 [main            ] INFO  ApiTest                - The following 2 profiles are active: "dev", "local"
+26-07-25.21:22:20.982 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.codespace]' package. Please check your configuration.
+26-07-25.21:22:21.842 [main            ] INFO  ApiTest                - Started ApiTest in 1.879 seconds (process running for 2.773)
+26-07-25.21:22:23.496 [main            ] INFO  ApiTest                - 测试完成
+26-07-25.22:23:10.556 [main            ] INFO  EmployeeDaoTest        - Starting EmployeeDaoTest using Java 17.0.12 with PID 24396 (started by zengjixiang in C:\Myworkplace\JavaWeb\Design-pattern\projectCoding\shoppingMall\s-pay-mall-application)
+26-07-25.22:23:10.558 [main            ] INFO  EmployeeDaoTest        - The following 2 profiles are active: "dev", "local"
+26-07-25.22:23:12.144 [main            ] INFO  EmployeeDaoTest        - Started EmployeeDaoTest in 2.044 seconds (process running for 3.148)
+26-07-25.22:27:23.721 [main            ] INFO  EmployeeDaoTest        - Starting EmployeeDaoTest using Java 17.0.12 with PID 29892 (started by zengjixiang in C:\Myworkplace\JavaWeb\Design-pattern\projectCoding\shoppingMall\s-pay-mall-application)
+26-07-25.22:27:23.722 [main            ] INFO  EmployeeDaoTest        - The following 2 profiles are active: "dev", "local"
+26-07-25.22:27:25.716 [main            ] INFO  EmployeeDaoTest        - Started EmployeeDaoTest in 2.476 seconds (process running for 3.459)
+26-07-25.22:27:27.400 [main            ] INFO  HikariDataSource       - Retail_Hikari - Starting...
+26-07-25.22:27:27.659 [main            ] INFO  HikariPool             - Retail_Hikari - Added connection com.mysql.cj.jdbc.ConnectionImpl@779b4f9c
+26-07-25.22:27:27.661 [main            ] INFO  HikariDataSource       - Retail_Hikari - Start completed.
+26-07-25.22:27:27.712 [main            ] INFO  EmployeeDaoTest        - 插入成功，自动生成 id: 40, 影响行数: 1
+26-07-25.22:27:27.723 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_Hikari - Shutdown initiated...
+26-07-25.22:27:27.730 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_Hikari - Shutdown completed.

@@ -9,16 +9,36 @@ spring:
     password: ${datasource.password}
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
-      maximum-pool-size: 10
-      minimum-idle: 5
-      idle-timeout: 300000
-      connection-timeout: 20000
-      max-lifetime: 1200000
+      pool-name: Retail_Hikari # 设置连接池的名字。非常重要：在日志输出、监控面板或 JMX 中，它会作为线程名前缀
+      minimum-idle: 15 # 空闲连接数
+      maximum-pool-size: 25 # 最大连接数
+      idle-timeout: 180000 #空闲连接最大存活时间：毫秒
+      auto-commit: true # 此属性控制从连接池返回的连接的默认自动提交行为
+      max-lifetime: 1800000 # 无论连接是否活跃，存活时间一到就会被移出池并替换为新连接
+      connection-timeout: 30000 #当池中所有连接都被占用且队列已满，客户端调用 getConnection() 等待的最长时间。超过此时间会抛出 SQLException
+      connection-test-query: select 1 # 连接存活检测的验证查询。当连接即将被借出时，HikariCP 会执行这个 SQL 来测试连接是否断开。
+    type: com.zaxxer.hikari.HikariDataSource
 
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
 server:
   port: 9090
 
 logging:
   level:
     root: INFO
-    com.codespace: DEBUG
+  config: classpath:logback-spring.xml
+
+# MyBatis 配置
+mybatis:
+  mapper-locations: classpath:maybatis/mapper/*.xml
+  config-location: classpath:mybatis-config.xml

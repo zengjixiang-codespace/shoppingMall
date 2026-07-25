@@ -158,6 +158,11 @@
             <groupId>com.codespace</groupId>
             <artifactId>s-pay-mall-infrastructure</artifactId>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <!--   开启资源过滤-->
@@ -210,6 +215,7 @@
                         <!--指定测试类名模式，只运行符合 *Test.java 的类（但由于跳过了，实际不生效）-->
                         <include>**/*Test.java</include>
                     </includes>
+                    <argLine>-XX:+EnableDynamicAgentLoading -Xshare:off</argLine>
                 </configuration>
             </plugin>
             <!-- Spring Boot 打包插件：打成可执行 fat jar -->

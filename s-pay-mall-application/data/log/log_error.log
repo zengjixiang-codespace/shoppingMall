@@ -1,0 +1,3 @@
+26-07-25.21:17:02.041 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.codespace]' package. Please check your configuration.
+26-07-25.21:20:22.824 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.codespace]' package. Please check your configuration.
+26-07-25.21:22:20.982 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[com.codespace]' package. Please check your configuration.

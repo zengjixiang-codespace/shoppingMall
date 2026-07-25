@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3876a0a1-6548-4346-8c1b-b2ca03277010" name="Changes" comment="feat: 0725 完成项目环境，依赖搭建">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-application/src/main/java/com/codespace/config/GuavaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-application/src/main/java/com/codespace/config/ThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-application/src/main/java/com/codespace/config/ThreadPoolConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-application/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-application/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-application/src/test/java/com/codespace/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/com/codespace/types/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/com/codespace/types/common/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/com/codespace/types/enums/RepositoryCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/com/codespace/types/enums/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/com/codespace/types/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/com/codespace/types/exception/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-domain/src/main/java/com/codespace/xxx/model/aggregate/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-domain/src/main/java/com/codespace/xxx/model/entity/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-domain/src/main/java/com/codespace/xxx/model/service/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-domain/src/main/java/com/codespace/xxx/model/valueObj/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-infrastructure/src/main/java/com/codespace/infrastructure/gateway/adapter/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-infrastructure/src/main/java/com/codespace/infrastructure/gateway/api/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-infrastructure/src/main/java/com/codespace/infrastructure/gateway/dto/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-infrastructure/src/main/java/com/codespace/infrastructure/persistent/dao/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-infrastructure/src/main/java/com/codespace/infrastructure/persistent/po/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-infrastructure/src/main/java/com/codespace/infrastructure/persistent/repository/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-trigger/src/main/java/com/codespace/trigger/http/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-trigger/src/main/java/com/codespace/trigger/job/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-trigger/src/main/java/com/codespace/trigger/listener/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-application/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-application/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-application/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-application/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/com/codespace/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-infrastructure/src/main/java/com/codespace/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-trigger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-trigger/src/main/java/com/codespace/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="INCOMING_COMMITS_CHECK_STRATEGY" value="FETCH" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="zengjixiang#0714" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zengjixiang-codespace&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zengjixiang-codespace/shoppingMall.git&quot;,
+    &quot;accountId&quot;: &quot;51851ffc-6e29-4297-9d2d-86081746980b&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="C:\CodeEdition\apache-maven-3.8.8-bin\apache-maven-3.8.8" />
+        <option name="localRepository" value="C:\CodeEdition\apache-maven-3.8.8-bin\apache-maven-3.8.8\mvn_repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="C:\CodeEdition\apache-maven-3.8.8-bin\apache-maven-3.8.8\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3GuNdnXZLwBtEX81fdiNFek4guP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ApiTest.test.executor": "Run",
+    "JUnit.EmployeeDaoTest.test_insert.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Application.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "zengjixiang0725",
+    "git.auto.fetch.suggestion.counter": "1",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Myworkplace/JavaWeb/Design-pattern/projectCoding/shoppingMall",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.EmployeeDaoTest.test_insert">
+    <configuration name="ApiTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s-pay-mall-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codespace.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.codespace" />
+      <option name="MAIN_CLASS_NAME" value="com.codespace.ApiTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeDaoTest.test_insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s-pay-mall-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codespace.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.codespace" />
+      <option name="MAIN_CLASS_NAME" value="com.codespace.EmployeeDaoTest" />
+      <option name="METHOD_NAME" value="test_insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="s-pay-mall-application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codespace.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmployeeDaoTest.test_insert" />
+        <item itemvalue="JUnit.ApiTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3876a0a1-6548-4346-8c1b-b2ca03277010" name="Changes" comment="" />
+      <created>1783947369561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783947369561</updated>
+      <workItem from="1783947370577" duration="165000" />
+      <workItem from="1784817584796" duration="945000" />
+      <workItem from="1784818563006" duration="1527000" />
+      <workItem from="1784960742528" duration="2623000" />
+      <workItem from="1784965181068" duration="18219000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 0725 完成项目环境，依赖搭建">
+      <option name="closed" value="true" />
+      <created>1784961930669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784961930669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 0725 完成项目环境，依赖搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 0725 完成项目环境，依赖搭建" />
+  </component>
+</project>

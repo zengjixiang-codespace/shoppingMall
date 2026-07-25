@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/docs/sql/archetype.sql" value="895e2cbe-3139-459f-b566-1a1a932bfec7" />
+    <file url="file://$PROJECT_DIR$/docs/sql/s-pay-mall.sql" value="895e2cbe-3139-459f-b566-1a1a932bfec7" />
+  </component>
+</project>
