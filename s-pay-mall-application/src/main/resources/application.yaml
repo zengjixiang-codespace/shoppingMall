@@ -1,3 +1,5 @@
 spring:
+  config:
+    name: shopping-mall
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:dev,local}
